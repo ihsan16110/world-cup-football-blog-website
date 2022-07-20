@@ -4,3 +4,93 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+/* body part  */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, aqua, skyblue);
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+/* Bannaer segment */
+foot {
+    padding-top: 50px;
+}
+
+.player {
+    background: linear-gradient(#32520f, #020e42);
+    color: white;
+    padding: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.inside {
+    width: 50%;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: goldenrod;
+}
+
+.header-subtitle {
+    font-size: 20px;
+    margin: 20px 0;
+    color: green;
+}
+
+.button {
+    position: relative;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 16px 25px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 20px;
+    overflow: hidden;
+    border: 2px solid #0096fa;
+    background-color: #00fafa;
+}
+
+.button span {
+    position: relative;
+    z-index: 1000;
+}
+
+.button::before {
+    content: "";
+    background-color: #3600fa;
+    position: absolute;
+    width: 51%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+}
+
+.button::after {
+    content: "";
+    background-color: #fa00bb;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: all 0.1s linear;
+
+}
+
+.button:hover {}
