@@ -153,6 +153,34 @@ main {
     position: relative;
 }
 
+.menu-button all {
+    background: white;
+    display: block;
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.active-menu-button {
+    background: white;
+    display: block;
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+
+}
+
 .menu-button span {
     position: relative;
     z-index: 10;
@@ -163,4 +191,415 @@ main {
     background-color: #fa00bb;
     width: 50%;
     height: 100%;
+}
+
+.menu-button::after {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #fa00bb;
+}
+
+.menu-button.active {
+    color: white;
+    background-color: #fa00bb;
+
+
+}
+
+.menu-button:hover {
+    color: orange;
+}
+
+.all {
+    margin: 30px 0;
+}
+
+.blogs {
+    width: calc(100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 24px;
+    grid-gap: 24px;
+}
+
+.blog {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #E8E8E8;
+
+}
+
+.blog:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.blog-image {
+    width: 100%;
+}
+
+.blog-body {
+    padding: 15px 20px;
+}
+
+.blog-button {
+    border: 1px solid black;
+    background: transparent;
+    font-weight: 500;
+    padding: 4px 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-heading {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.ic {
+    font-weight: 300;
+    color: black
+}
+
+.ic comment {
+    margin-left: 30px;
+}
+
+.view.hold {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 25px;
+}
+
+/* All Groups */
+.groups {
+    display: grid;
+
+}
+
+.groups h2 {
+    text-align: center
+}
+
+.dols {
+    padding: 40px 50px;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.dols p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+footer {
+    background-color: black;
+    padding: 60px 0;
+}
+
+.view {
+    text-align: center;
+}
+
+.quotes {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-header {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.line {
+
+    height: 0.5px;
+    background-color: grey;
+    margin: 15px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.footer-menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.socialapp {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.social-site {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background: rgb(219, 219, 220);
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+/* Upcoming Matches Page */
+.fixture {
+    padding-left: 20px;
+    display: grid;
+    width: calc(100%);
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.matches {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.matches:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.flex.flags {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.flag {
+    margin: 0 15px;
+    width: 70px;
+}
+
+.date {
+    text-align: center;
+    color: #4D4D4D;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.flex.flags p {
+    font-weight: 600;
+}
+
+.teams {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+/* ------------media quries-------------- */
+/* For Tablets */
+
+
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .banner {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .player {
+        padding: 60px;
+    }
+
+    .title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .banner-image img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .flex.box {
+        flex-direction: column;
+    }
+
+    .buttons {
+        background: transparent;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu-button {
+        border: 1px solid #E8E8E8;
+        width: 32%;
+
+    }
+
+    .blogs {
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog:last-child {
+        display: none;
+    }
+
+    .view.hold .btn {
+        padding: 12px 30px;
+    }
+
+
+    .view.hold {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .fixture {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 0;
+    }
+
+
+    .footer-menu {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        margin: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-menu li {
+        margin: 10px 40px;
+    }
+
+    .groups {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* For Mobile device  */
+
+
+    @media screen and (max-width: 767px) {
+        .banner {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .kick {
+            padding-top: 30px;
+        }
+
+        .player {
+            background: linear-gradient(45deg, #520f0f, #150242);
+            flex-direction: column;
+            text-align: center;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .inside {
+            width: 100%;
+        }
+
+        .btn {
+            padding: 8px 12px;
+        }
+
+
+        .inside.banner-image {
+            margin-top: 40px;
+        }
+
+        .buttons {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .menu-btn {
+            width: 100%;
+            margin: 10px;
+        }
+
+        .blogs {
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 24px;
+        }
+
+        .fixture {
+            grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
+            padding-top: 24px;
+        }
+
+        .footer-menu {
+            flex-direction: column;
+        }
+
+        footer {
+            padding: 40px 0;
+        }
+
+        main {
+            padding: 30px 0;
+        }
+
+        .view.hold {
+            display: none;
+        }
+
+        .groups {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+
+
+
+
+
+
+
 }
