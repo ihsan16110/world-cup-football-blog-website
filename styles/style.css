@@ -93,4 +93,74 @@ foot {
 
 }
 
-.button:hover {}
+.button:hover {
+    color: #00fa9e;
+    background-color: transparent;
+    transition: .5s;
+
+}
+
+.button:hover::before {
+    transform: translate(-100%);
+}
+
+.button:hover::after {
+    transform: translate(100%);
+}
+
+.banner-image image {
+    width: 75%;
+    margin: 0;
+    display: block;
+}
+
+.player:hover .banner-image image {
+    transform: rotate(20deg) scale(1.2);
+
+}
+
+/* MENU and Blog section  */
+main {
+    padding: 90px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.box {
+    align-items: flex-start;
+}
+
+.buttons {
+    background: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 312px;
+}
+
+.menu-button {
+    background: white;
+    display: block;
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.menu-button span {
+    position: relative;
+    z-index: 10;
+}
+
+.menu-button::before {
+    position: absolute;
+    background-color: #fa00bb;
+    width: 50%;
+    height: 100%;
+}
