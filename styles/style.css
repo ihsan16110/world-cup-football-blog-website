@@ -120,6 +120,14 @@ img {
     transition: all 0.5s linear;
 }
 
+/* img {
+    transition: all 0.5s linear;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+} */
+
 
 .player:hover .banner-image image {
     transform: rotate(20deg) scale(1.2);
@@ -133,6 +141,7 @@ main {
 
 .flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .box {
